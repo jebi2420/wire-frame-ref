@@ -1,0 +1,337 @@
+/* 로고 서체 */
+@font-face {
+    font-family: 'jalnan'; /* 서체의 이름을 지정합니다. */
+    src: url('./asset/Jalnan2TTF.ttf'); /* 서체 파일의 경로를 지정합니다. */
+}
+/* 나머지 서체 */
+@font-face {
+    font-family: 'suit'; 
+    src: url('./asset/SUIT-Variable.ttf'); 
+}
+
+/* css 스타일 초기화 */
+html,
+body,div,ul,li,a,p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    color: #273e49;
+    font-family: suit;
+}
+
+/* .test{
+    position: relative;
+    top: 152px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;   
+    background-color: #28b5b56b;
+    font-size: 11px;
+    z-index: -100;
+} */
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    font-weight: 800;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    /* border: 1px solid blue; */
+}
+
+.main-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #4b778d25; 구역 표시용 */
+    padding-top: 40px;
+    margin-bottom: 200px;
+}
+
+.margin {
+    width: 180px;
+    height: 100vh;
+    /* background-color: rgba(255, 166, 0, 0.164); */
+}
+
+/* header */
+header{
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.logo-container{
+    font-family: jalnan;
+}
+
+.logo {
+    display: flex;
+    color: #4B778D;
+    font-weight: 400;
+    font-size: 40px;
+    margin-right: 50px;
+}
+
+.logo i{
+    color: #28B5B5;
+    margin-right: 13px;
+}
+
+.search-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+
+.search-input{
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 50px;
+}
+
+.search-container i {
+    position: absolute;
+    right: 19px;
+}
+
+
+
+.search-input:hover, .search-input:focus, .search-input:focus-visible{
+    border: 1px solid #28B5B5;
+    outline: #28B5B5;
+}
+
+/* nav-bar */
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* margin-bottom: 50px; */
+    /* border-bottom: 1px solid #28B5B5; */
+}
+
+.nav-bar ul:nth-child(1){
+    padding-left: 10px;
+}
+
+/* .nav-bar ul:nth-child(2){
+    padding-right: 10px;
+} */
+
+.nav-items{
+    display: flex;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.nav-item{
+    padding: 0 50px 13px 0;
+}
+
+.sign-item{
+    padding: 10px 18px;
+}
+
+.join{
+    background-color: #28B5B5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.join:hover{
+    background-color: #28b5b5a9;
+    cursor: pointer;
+}
+
+.signs{
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* 메인 배너 */
+.main-banner-area{
+    width: 100%;
+    height: 700px;
+    background-image: url(https://img.modetour.com/eagle/photoimg/55875/rfile/637927840282714700.jpg?resize=y&resize_w=1340&resize_h=700&w_h_fill=y);
+    background-size: cover;
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    background-color: #4B778D;
+    margin-bottom: 107px;
+}
+
+
+/* main */
+main{
+    /* position: relative;
+    top: 807px; */
+}
+
+/* 어디로 떠날까요 */
+.title-area {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item-box {
+    display: flex;
+    margin-bottom: 107px;
+    }
+
+.item {
+    position: relative;
+    width: 251.5px;
+    height: 333px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+    border: 1px solid #c4ced3;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item:hover{
+    box-shadow: 0 2px 8px #38556450
+}
+
+.item:nth-child(2){
+    background-image: url(https://d2ur7st6jjikze.cloudfront.net/landscapes/4737_large_square_1535949304.jpg?1535949304);
+    background-size: cover;
+    box-shadow: 10px 10px 200px 10px #292e30bd inset;
+}
+
+.item:nth-child(3){
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    background-image: url(https://d2ur7st6jjikze.cloudfront.net/landscapes/4737_large_square_1535949304.jpg?1535949304);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.item-cap{
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    padding: 16px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    border-top: 1px solid #c4ced3;
+    background-color: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.caption{
+    margin-top: 6px;
+    color: #626f75;
+    font-size: 14px;
+}
+
+.price{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tags{
+    display: flex;
+}
+
+.tag{
+    margin-right: 4px;
+    padding: 4px 10px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    background-color: #28B5B5;
+}
+
+.item:nth-child(4) {
+    background-image: url(https://d2ur7st6jjikze.cloudfront.net/landscapes/4737_large_square_1535949304.jpg?1535949304);
+    background-size: cover;
+    margin-right: 0;
+}
+
+.item-cap-texts{
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    color: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.item-cap-texts .caption{
+    color: rgba(255, 255, 255, 0.822);
+}
+
+.item-cap-texts .tag{
+    color: #4B778D;
+    background-color: #8FD9A8;
+}
+
+.color-cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #28b5b5dc;
+}
+
+.event-banner {
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+img{
+    width: 1086px;
+    height: 100%;
+}
