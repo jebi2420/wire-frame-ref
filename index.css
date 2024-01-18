@@ -1,3 +1,26 @@
+:root {
+    /* color */
+    --white: #fff;
+          --black: #000;
+    --blue-900: #273e49; /* 텍스트 색상, black 대신 쓰세요 */
+          --blue-800: ##4B778D; /* 메인컬러1 : 네이비 */
+          --blue-700: #626f75;  /* 서브 텍스트 색상, 짙은 회색 */
+          --mint-900: #28b5b5; /* 메인컬러2 : 선명한 민트색 */
+          --light-green: #8FD9A8; /* 메인컬러3 밝은 연두색 */
+          --yellow-green: #D2E69C; /* 메인컬러4 가장 밝은 연두색 */
+          
+          /* border-radius */
+          --radius-10: 10px; /* 카드 요소에 넣어주세요. */ 
+          --radius-50: 50px /* 완전히 둥글게 */	
+
+       /* margin */	
+          --margin-16: 16px /* 섹션 제목과 섹션 요소 사이에 넣어주세요 */
+          --margin-107: 107px /* 섹션과 섹션사이에 넣어주세요 */
+
+      /* box-shadow */
+          --shadow: 0 2px 8px #38556450; /* hover시 많이 쓰이는 그림자 */
+}
+
 /* 로고 서체 */
 @font-face {
     font-family: 'jalnan'; /* 서체의 이름을 지정합니다. */
